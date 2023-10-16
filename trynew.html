@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    
+
+<head>
+   
+<script>
+    window.addEventListener('load', () => {
+    const preloader = document.querySelector('.preloader');
+    const content = document.querySelector('.content');
+
+    preloader.style.display = 'none';
+    content.style.display = 'block';
+});
+</script>
+</head>
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+   <nav> <ul >
+        <li><a class="nav-link" href="./javascript.html">Click to have some Js fun!!</a></li></ul>
+    </nav>
+
+    <section id="skills">
+        <h1 class="headings"> Things I have Implemented, Come hover on!</h1>
+        <br>
+        
+        <div class="rows">
+            <div class="box">
+
+                <h1 class="headings">HTML</h1>
+                <br>
+               
+               <ul><li>Section</li> <br>
+            <li>Section</li> <br>
+            <li>Table</li> <br>
+            <li>iframe</li> <br>
+            <li>fieldset,legend</li> <br>
+            <li>form</li> <br>
+            <li>Details</li> <br>
+            <li>Canvas</li><br>
+            <li>Form valiudation in html</li>
+            </ul>
+            </div>
+           
+
+            
+
+            <div class="box">
+
+                <h1 class="headings">CSS</h1>
+                <br>
+                
+                <ul><li>Flexbox,gridbox</li><br>
+                    <li>Opacity</li><br>
+                    <li>Transform</li><br>
+                    <li>Transition</li><br>
+                    <li>Transparency</li><br>
+                    <li>Animate</li><br>
+                    <li>Hover</li><br>
+                    <li>Canvas</li><br>
+                    
+        
+                    </ul>
+                <br>
+        
+                
+            </div>
+
+            <div class="box">
+
+                <h1 class="headings">JavaScript</h1>
+                <br>
+                
+                <ul><li>AddEventListener</li><br>
+                    <li>Toggle</li><br>
+                    <li>onclick</li><br>
+                    <li>Animate</li><br>
+                    <li>Drag,Drop</li><br>
+                    
+        
+                    </ul>
+                <br>
+        
+                
+            </div>
+           
+        </div>
+
+    </section>
+
+  
+    <div class="content">
+    <h2><span>H</span>TML5 </h2>
+   
+
+  
+  
+  <br/>
+  <hr>
+  <table border="1" style="border-color: azure;">
+    <thead style="color:yellow ;">
+        <tr><th>HTML</th>
+        <th>CSS</th>
+        <th>JS</th>
+    </tr></thead>
+    <tbody>
+        <tr>
+            <td>Section</td>
+            <td>Flexbox, Grid box</td>
+            <td>AddEvent listener</td>
+        </tr>
+        <tr>
+            <td>Table</td>
+            <td>Opacity</td>
+            <td>Onclick</td>
+      
+      </tr>
+      <tr>
+        <td>iframe</td>
+        <td>Transition</td>
+        <td>Toggle</td>
+  
+  </tr>
+  <tr>
+    <td>Fieldset, legend</td>
+    <td>Transform</td>
+    <td>Animate</td>
+
+</tr>
+<tr>
+    <td>Nav bar</td>
+    <td>Canvas</td>
+    <td>form validation</td>
+
+</tr>
+    </tbody>
+</table>
+
+  <div class="bubbles">
+
+    <img src="./heart.webp">
+    <img src="./bubble.png">
+    <img src="./heart.webp">
+    <img src="./bubble.png">
+    <img src="./heart.webp">
+    <img src="./bubble.png">
+    <img src="./heart.webp">
+    
+    </div>
+  
+
+<br/>
+<label for="email">Your email address <span class="mandatory">*</span></label>
+<input id="email" name="email" required aria-required="true" placeholder="Email" required="">  
+
+<form  method="post" onsubmit="showAlert()">
+<fieldset>
+    <legend>Your date of birth</legend>
+    <label for="dobDay">Day <span class="mandatory">*</span></label>
+    <select id="dobDay" >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="1">4</option>
+        <option value="2">5</option>
+        <option value="3">6</option>
+        <option value="1">7</option>
+        <option value="2">8</option>
+        <option value="3">9</option>
+        <option value="1">10</option>
+        <option value="2">12</option>
+        <option value="3">13</option>
+        <option value="1">14</option>
+        <option value="2">15</option>
+        <option value="3">16</option>
+        <option value="1">17</option>
+        <option value="2">18</option>
+        <option value="3">19</option>
+        <option value="1">20</option>
+        <option value="2">21</option>
+        <option value="3">22</option>
+        <option value="1">23</option>
+        <option value="2">24</option>
+        <option value="3">25</option>
+        <option value="1">26</option>
+        <option value="2">27</option>
+        <option value="3">28</option>
+        <option value="1">29</option>
+        <option value="2">30</option>
+        <option value="3">31</option>
+    </select>
+    <label for="dobMonth">Month <span class="mandatory">*</span></label>
+    <select id="dobMonth">
+        <option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+    </select>
+    <label for="dobYear">Year <span class="mandatory">*</span></label>
+    <input id="dobYear" type="text" placeholder="YYYY">
+
+    <button type="submit" class="butto">Submit</button>
+
+  </fieldset>
+</form>
+
+<h1>Image Transparency</h1>
+<p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+
+<img src="./img_forest.jpg" alt="Forest" width="170" height="100" class="image">
+<img src="./img_mountains.jpg" alt="Mountains" width="170" height="100" class="image" >
+<img src="./img_5terre.jpg" alt="Italy" width="170" height="100" class="image">
+
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c?si=zxWF1McISW01tbAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+<div class="con">
+    <div id="ball1">
+    <img src="./353-3535750_tom-and-jerry-tom-the-cat-running.png" width="200" height="150">
+    </div>
+    <div id="ball2">
+        <img src="./tom_and_jerry_PNG2.png" width="200" height="100">
+
+    </div>
+</div>
+
+  <button onclick="ball1left();" class="clickbut">ball1-Left</button>
+
+<button onclick="ball1right();" class="clickbut">ball1-right</button>
+
+<button onclick="ball2left();" class="clickbut">ball2-Left</button>
+
+<button onclick="ball2right();" class="clickbut">ball2-right</button>
+
+
+
+</div>
+
+<script>
+    function ball1left() {
+        document.getElementById('ball1').style.left = 0;
+       document.getElementById('ball1').style.imageOrientation= "https://img.cartoongoodies.com/wp-content/uploads/2019/10/16155814/tom-running-fast.png";
+        
+    }
+    
+    function ball1right() {
+        document.getElementById('ball1').style.left = "80vw";
+       /* document.getElementById('ball1').style.backgroundColor="forestgreen";*/
+    }
+    function ball2left() {
+        document.getElementById('ball2').style.left = 0;
+       /* document.getElementById('ball2').style.backgroundColor = "blue";*/
+        
+    }
+    function ball2right() {
+        document.getElementById('ball2').style.left = "82vw";
+       /* document.getElementById('ball2').style.backgroundColor ="pink" ;*/
+    }
+    function showAlert() {
+            alert("Form submitted successfully!");
+        }
+
+
+</script>
+
+
+</body>
+</html>
